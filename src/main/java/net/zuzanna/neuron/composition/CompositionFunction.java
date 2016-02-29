@@ -1,7 +1,9 @@
 package net.zuzanna.neuron.composition;
 
-public interface CompositionFunction {
+import net.zuzanna.neuron.dendrite.Dendrites;
 
-	double activate(double input);
+public interface CompositionFunction {
+	
+	double activate( Dendrites dendrites );
 	
 }

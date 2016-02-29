@@ -1,9 +1,13 @@
 package net.zuzanna.neuron;
 
-public interface Neuron {
+import net.zuzanna.common.Activateable;
+import net.zuzanna.neuron.axon.Axon;
+import net.zuzanna.neuron.dendrite.Dendrites;
 
+public interface Neuron extends Activateable {
+	
 	Axon getAxon();
-
-	DendriteManagaer getDendritManager();
-
+	
+	Dendrites getDendrites();
+	
 }
