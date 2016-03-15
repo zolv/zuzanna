@@ -1,6 +1,6 @@
 package net.zuzanna.common;
 
-public interface Output extends Value {
+public interface Reader {
 
 	double getValue();
 }

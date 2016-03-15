@@ -1,6 +1,6 @@
 package net.zuzanna.common;
 
-public class SimpleInput implements Input {
+public class SimpleInput implements Value {
 
 	private double value;
 
@@ -12,6 +12,14 @@ public class SimpleInput implements Input {
 	@Override
 	public void setValue( double value ) {
 		this.value = value;
+	}
+	
+	public Reader getReader() {
+		return this;
+	}
+	
+	public Writer getWriter() {
+		return this;
 	}
 
 }

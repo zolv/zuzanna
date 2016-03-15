@@ -1,6 +1,6 @@
 package net.zuzanna.common;
 
-public interface Input extends Value {
+public interface Writer {
 
 	void setValue(double value);
 

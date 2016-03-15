@@ -1,5 +1,6 @@
 package net.zuzanna.neuron.axon;
 
+import net.zuzanna.neuron.Neuron;
 import net.zuzanna.util.observer.Notifier;
 
 public class NotifiableAxon implements Axon {
@@ -8,8 +9,8 @@ public class NotifiableAxon implements Axon {
 
 	private final Notifier observed = new Notifier();
 
-	public NotifiableAxon() {
-		this( new BasicAxon() );
+	public NotifiableAxon(Neuron neuron) {
+		this( new BasicAxon(neuron) );
 	}
 
 	public NotifiableAxon( BasicAxon axon ) {
@@ -29,6 +30,11 @@ public class NotifiableAxon implements Axon {
 
 	public Notifier getNotifier() {
 		return this.observed;
+	}
+
+	@Override
+	public Neuron getNeuron() {
+		return this.axon.getNeuron();
 	}
 
 }

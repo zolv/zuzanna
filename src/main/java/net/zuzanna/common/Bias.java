@@ -1,6 +1,6 @@
 package net.zuzanna.common;
 
-public class Bias implements Value {
+public class Bias implements Reader {
 
 	private static final Bias DEFAULT_BIAS = new Bias( 1d );
 

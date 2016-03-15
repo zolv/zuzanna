@@ -8,7 +8,7 @@ import net.zuzanna.neuron.dendrite.Dendrites;
 
 public class BasicNeuron implements Neuron {
 
-	private BasicAxon axon;
+	private final BasicAxon axon;
 
 	private final ActivationFunction activator;
 
@@ -18,6 +18,7 @@ public class BasicNeuron implements Neuron {
 		super();
 		this.activator = activator;
 		this.dentrites = new BasicDendrites();
+		this.axon = new BasicAxon(this);
 	}
 
 	@Override
