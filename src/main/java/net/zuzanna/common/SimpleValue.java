@@ -1,6 +1,6 @@
 package net.zuzanna.common;
 
-public class SimpleInput implements Value {
+public class SimpleValue implements Value {
 
 	private double value;
 
